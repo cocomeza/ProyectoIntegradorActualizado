@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COCOSHOP</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <a class="navbar-brand" href="#">COCOSHOP</a>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <button id="todos" class="boton-menu boton-categoria">Todos los
+                                productos</button>
+                        </li>
+                        <li class="nav-item">
+                            <button id="notebooks" class="boton-menu boton-categoria">Notebooks</button>
+                        </li>
+                        <li class="nav-item">
+                            <button id="tablets" class="boton-menu boton-categoria">Tablets</button>
+                        </li>
+                        <li class="nav-item">
+                            <button id="consolas" class="boton-menu boton-categoria">Consolas</button>
+                        </li>
+                        <li class="nav-item">
+                            <button id="auriculares" class="boton-menu boton-categoria">Auriculares</button>
+                        </li>
+                        <li class="nav-item">
+                            <button id="impresoras" class="boton-menu boton-categoria">Impresoras</button>
+                        </li>
+                        <li class="nav-item">
+                            <a class="boton-menu boton-categoria " href="./carrito.html">🛒Carrito <span id="numerito"
+                                    class="numerito">0</span></a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="buscar">
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <h2 class="titulo-principal" id="titulo-principal">Todos los productos</h2>
+        </div>
+        <div class="contenedor-productos" id="contenedor-productos">
+
+            <!-- Esto se va a rellenar con JS -->
+        </div>
+    </main>
+    <footer>
+        <section class="ft-main">
+            <div class="ft-main-item">
+                <h2 class="ft-title">Eventos Especiales</h2>
+                <ul>
+                    <li><a href="#">Hot Sale</a></li>
+                    <li><a href="#">Cyber Monday</a></li>
+                    <li><a href="#">Electro Fans</a></li>
+                    <li><a href="#">Black Friday</a></li>
+                    <li><a href="#">Somos Responsables</a></li>
+                </ul>
+            </div>
+            <div class="ft-main-item">
+                <h2 class="ft-title">Institucional</h2>
+                <ul>
+                    <li><a href="#">Empresa</a></li>
+                    <li><a href="#">Crédito Personal</a></li>
+                    <li><a href="#">Venta Corporativa</a></li>
+                    <li><a href="#">Trabajá en COCOSHOP</a></li>
+                </ul>
+            </div>
+            <div class="ft-main-item">
+                <h2 class="ft-title">Legales</h2>
+                <ul>
+                    <li><a href="#">Políticas de Cambio</a></li>
+                    <li><a href="#">Defensa de las y los Consumidores</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="ft-main-item">
+                <h2 class="ft-title">Mantente actualizado</h2>
+                <p>Recibí ofertas y promociones</p>
+                <form>
+                    <input type="email" name="email" placeholder="Ingresa tu E-mail">
+                    <input type="submit" value="SUSCRIBIRME">
+                </form>
+            </div>
+        </section>
+
+        <section class="ft-social">
+            <ul class="ft-social-list">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-github"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-telegram"></i>
+                <li><a href="#"><i class="fa-brands fa-whatsapp"></i>
+            </ul>
+        </section>
+
+        <section class="ft-legal">
+            <ul class="ft-legal-list">
+                <li><a href="#">Términos y Condiciones</a></li>
+                <li><a href="#">Políticas de Privacidad</a></li>
+                <li>&copy; 2023 Maxi Meza.</li>
+            </ul>
+        </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/menu.jsS"></script>
+</body>
+
+</html>

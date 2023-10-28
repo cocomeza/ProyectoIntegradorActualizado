@@ -1,0 +1,178 @@
+[
+    {
+        "id": "Notebook-01",
+            "titulo": "Notebook Cel - EXO 01",
+            "imagen": "https://i.postimg.cc/mgfWxRMt/notebook01.webp",
+            "categoria":{
+                "nombre":"Notebooks",
+                "id": "notebooks"
+            },
+            "precio": 199.999
+        },
+            
+    
+    {
+            "id": "Tablets-01",
+            "titulo": "Tablet PCBOX 01",
+            "imagen": "https://i.postimg.cc/ydjByGrv/tablet01.webp",
+            "categoria":{
+                "nombre":"Tablets",
+                "id": "tablets"
+            },
+            "precio": 49.999
+        },
+    
+    {
+            "id": "Consolas-01",
+            "titulo": " Playstation 4 01",
+            "imagen": "https://i.postimg.cc/5N6Yj56Z/PLAYSTATION-01.webp",
+            "categoria":{
+                "nombre":"Consolas",
+                "id": "consolas"
+            },
+            "precio": 687.999
+        },
+    
+    {
+            "id":"Auriculares-01",
+            "titulo": "Auricular Havit  01",
+            "imagen": "https://i.postimg.cc/Kj2pqcC2/auricular01.webp",
+            "categoria":{
+                "nombre":"Auriculares",
+                "id": "auriculares"
+            },
+            "precio": 71.499
+        
+    }, 
+    
+    {
+            "id":"Impresoras-01",
+            "titulo": "MULTIFUNCION HP 01",
+            "imagen": "https://i.postimg.cc/sXsKRHDF/impresora01.webp",
+            "categoria":{
+                "nombre":"Impresoras",
+                "id": "impresoras"
+            },
+            "precio":77.075
+            
+    },
+    
+    {
+        "id": "Notebook-02",
+        "titulo": " Notebook PCBOX 02",
+        "imagen": "https://i.postimg.cc/25HzNMrM/notebook02.webp",
+        "categoria":{
+            "nombre":"Notebooks",
+            "id": "notebooks"
+        },
+        "precio":227.699
+            
+    },
+    
+    {
+            "id": "Tablets-02",
+            "titulo": "Tablet Enova 8 02",
+            "imagen": "https://i.postimg.cc/vBYwTzH9/tablet02.webp",
+            "categoria":{
+                "nombre":"Tablets",
+                "id": "tablets"
+            },
+            "precio": 62.999
+        },
+            
+    {
+            "id": "Consolas-02",
+            "titulo": "Play Station 5 02",
+            "imagen": "https://i.postimg.cc/g2hxHYys/playstation02.webp",
+            "categoria":{
+                "nombre":"Consolas",
+                "id": "consolas"
+            },
+            "precio":750.999
+        },
+    
+    {
+            "id":"Auriculares-02",
+            "titulo": "Auriculares Moto 02",
+            "imagen": "https://i.postimg.cc/rFpN8t1H/auricular2.webp",
+            "categoria":{
+                "nombre":"Auriculares",
+                "id": "auriculares"
+            },
+            "precio": 3.299
+        
+    }, 
+        
+    {
+        "id":"Impresoras-02",
+        "titulo": "Laser Xerox 02",
+        "imagen": "https://i.postimg.cc/3NWXKPsq/impresora02.webp",
+        "categoria":{
+            "nombre":"Impresoras",
+            "id": "impresoras"
+        },
+        "precio":159.999
+        
+},
+        
+    
+    {
+            "id": "Notebook-03",
+            "titulo": "Notebook Enova 03",
+            "imagen": "https://i.postimg.cc/RZdmwy6h/notebook03.webp",
+            "categoria":{
+                "nombre":"Notebooks",
+                "id": "notebooks"
+            },
+            "precio": 299.999
+        },
+            
+    
+    {
+            "id": "Tablets-03",
+            "titulo": "Tablet Feel 03",
+            "imagen": "https://i.postimg.cc/V6Gp6PhQ/tablet03.webp",
+            "categoria":{
+                "nombre":"Tablets",
+                "id": "tablets"
+            },
+            "precio": 64.349
+        },
+    
+    {
+        "id": "Consolas-03",
+        "titulo": "PS5 STANDARD 03",
+        "imagen": "https://i.postimg.cc/Y0VSQVhT/playstation03.webp",
+        "categoria":{
+            "nombre":"Consolas",
+            "id": "consolas"
+        },
+        "precio": 991.999
+    },
+            
+    {
+            "id":"Auriculares-03",
+            "titulo": "Auriculares Noblex 03",
+            "imagen": "https://i.postimg.cc/fR9XL7J8/auricular03.webp",
+            "categoria":{
+                "nombre":"Auriculares",
+                "id": "auriculares"
+            },
+            "precio": 16.849
+        
+    }, 
+        
+
+    {
+            "id":"Impresoras - 03",
+            "titulo": "Impresora BROTHER 03",
+            "imagen": "https://i.postimg.cc/CxCqVhZ1/impresora03.webp",
+            "categoria":{
+                "nombre":"Impresoras",
+                "id": "impresoras"
+            },
+            "precio":207.506
+            
+    }
+    
+    ]
