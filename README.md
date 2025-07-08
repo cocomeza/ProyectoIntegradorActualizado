@@ -1,59 +1,100 @@
+# 🛒 E-commerce COCOSHOP
 
-E-commerce COCOSHOP
+Este es un proyecto de tienda virtual desarrollado con **HTML, CSS y JavaScript puro**, en el cual se pueden visualizar productos por categoría, agregarlos al carrito de compras, eliminarlos y realizar acciones básicas como guardar la información en `localStorage`.
 
-En el js lo primero que hice es crear un array de productos.
-Abri un objeto y le puse un "id" a cada producto y las caracteristicas como titulo,img,categoria,precio,etc.
-IMPORTANTE (A las categorias le puse un "id").
-Las imagenes en vez de subirla a una carpeta le genere un link de cada imagen a traves de esta pagina https://postimg.cc/.
+---
 
-Cree una constante con el nombre contenedorProductos y (lo traje a traves de un id).
-luego cree una funcion cuyo nombre le puse cargarProductos y alli dentro cree un foreach para recorrer todos los arrays.
-Cree un div contenedor que le puse de nombre (producto) y aplique un innerhtml para darle la estructura dentro.
-luego hice un append al div (contenedorProductos), despues llamo a una funcion con el nombre cargar productos.
+## 🧱 Funcionalidades principales
 
-BOTONES
+- Mostrar productos en el DOM desde un array local.
+- Filtrar productos por categorías.
+- Agregar y eliminar productos del carrito.
+- Calcular cantidad total de productos.
+- Persistir el carrito en `localStorage`.
+- Vista de carrito con acciones dinámicas.
 
-Le puse un id a los botones en el html ( genere una contante en el js y le puse botonesCategoria
-Y le agregue un foreach y un addevelintenner para poder filtar por categorias los productos.
-(use filter para filtrar las categorias)
-Para agregar los productos al carrito...
+---
 
-cree un let que diga botones agregar(para agregar al carrito)
-luego cree una funcion (actualizarBotonesAgregar)
-creo un foreach de botonesAgregar y dentro un evento addevenlistenner y 
-que como funcion sea "agregar al carrito"
+## 🛠️ Lógica implementada
 
-creo una cont de productosEnCarrito que sea igual a un array vacio
+### 📦 Creación de productos
 
-Entonces creo la funcion agregarAlCarrito 
-busco el array de productos con el metodo FindIndex.
-Ademas use some (para que me devuelva true o false)
-le agregue la propiedad (cantidad)
-despues use el metodo push para agregar pruductos al carrito
+- Se definió un **array de productos**, donde cada producto es un objeto con propiedades:
+  - `id`, `titulo`, `imagen`, `categoria` (con su propio `id`), `precio`, etc.
+- Las **imágenes** fueron cargadas mediante links generados desde [postimg.cc](https://postimg.cc/) en lugar de alojarlas localmente.
 
-NUMERITO
+---
 
-Para el numerito cree una variable let numerito
-y tambien una funcion para actualizar el numerito lo hice con el metodo (reduce)
-al que le agregue un acumulador para que sume toda la cantidad de los productos que agregue al carrito y cuya cuenta arranque en cero.
+### 🧩 Mostrar productos
 
-Para llevar todo al localStorage hago un localStorage.setitem(productoencarrito) 
-y como valor le pase un JSON.stringfy de (productosencarrito)
+- Se obtuvo el `div` contenedor de productos mediante `getElementById`.
+- Se creó una función `cargarProductos` que recorre el array con `forEach`.
+- Por cada producto se crea un `div` con la clase `producto` y se inserta el contenido con `innerHTML`.
+- Luego se hace un `appendChild` al contenedor principal y se llama a la función para mostrar todo.
 
-Cree un carrito.html y un carrito.js lo traigo y parseo el JSON 
-traigo algunos elementos del html como 
-contenedorCarritoVacio 
-contenedorProductos,
-contenedorCarritoAcciones,
-contenedorCarritoComprado.
+---
 
-CARRITO
+### 🧰 Botones de categorías
 
-Creo un foreach para productos en carrito 
-por cada producto creo un div con la clase (carrito-producto)
-creo una funcion botonesEliminar (para eliminar productos en el carrito)
+- Se definieron `botonesCategoria` con un `id` en el HTML.
+- En JS se hizo un `forEach` con `addEventListener` para detectar clics y filtrar productos usando el método `filter` según la categoría seleccionada.
 
+---
 
+### 🛒 Agregar al carrito
+
+- Se creó un `let botonesAgregar` y una función `actualizarBotonesAgregar`.
+- Se agregó un `addEventListener` a cada botón con la función `agregarAlCarrito`.
+- Se creó `productosEnCarrito` como array vacío para almacenar los productos agregados.
+- En `agregarAlCarrito` se usa:
+  - `findIndex` para buscar si ya existe,
+  - `some` para verificar si está en el carrito,
+  - y `push` para agregar si es nuevo.
+- Se asigna y actualiza la propiedad `cantidad`.
+
+---
+
+### 🔢 Numerito del carrito
+
+- Se definió una variable `numerito` para mostrar la cantidad total.
+- Se usó `reduce` para acumular la cantidad de productos.
+- Se actualiza automáticamente al agregar o quitar productos.
+
+---
+
+### 💾 Persistencia
+
+- Se utilizó `localStorage.setItem('productosEnCarrito', JSON.stringify(productosEnCarrito))` para guardar los datos.
+- En la página del carrito, se parsean los datos con `JSON.parse`.
+
+---
+
+## 🛍️ Página del carrito
+
+- Archivo: `carrito.html` y `carrito.js`
+- Se obtienen elementos como:
+  - `contenedorCarritoVacio`
+  - `contenedorProductos`
+  - `contenedorCarritoAcciones`
+  - `contenedorCarritoComprado`
+- Se recorre `productosEnCarrito` con `forEach` para mostrar cada producto en el carrito.
+- Se creó una función `botonesEliminar` para eliminar productos desde el carrito.
+
+---
+
+## 📁 Archivos importantes
+
+```
+COCOSHOP/
+├── index.html
+├── carrito.html
+├── js/
+│   ├── main.js
+│   └── carrito.js
+├── css/
+│   └── estilos.css
+└── README.md
+```
 
 
 
